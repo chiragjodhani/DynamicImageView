@@ -1,0 +1,15 @@
+PODS:
+  - MMSCameraViewController (1.0.3)
+  - MMSProfileImagePicker (1.4.1):
+    - MMSCameraViewController (~> 1.0.3)
+
+DEPENDENCIES:
+  - MMSProfileImagePicker
+
+SPEC CHECKSUMS:
+  MMSCameraViewController: c32450a83d5ad18d38a1d85c68bf899362a93667
+  MMSProfileImagePicker: fa3aee5746945f7bee2cb422bf51dd4478b94e39
+
+PODFILE CHECKSUM: cffa07b6f44a8bf686ae098094902e8cd3f2349e
+
+COCOAPODS: 1.2.0

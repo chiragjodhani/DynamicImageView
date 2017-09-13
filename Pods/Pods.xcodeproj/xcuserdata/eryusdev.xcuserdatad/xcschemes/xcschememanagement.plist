@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MMSCameraViewController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MMSProfileImagePicker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-DynamicImageChanges.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-DynamicImageChangesTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-DynamicImageChangesUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>03AA3432A2ADBD3138E175E2CD966C4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BF39E40E81BF6788AFE3FF14BE2BEDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B071413984EE593EEF675A09C0842DC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3A6B5593B64857C8764D8304BFFE12F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2E8557A7C72848196AD212C53A569DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
