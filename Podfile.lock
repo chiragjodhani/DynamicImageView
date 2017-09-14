@@ -2,14 +2,17 @@ PODS:
   - MMSCameraViewController (1.0.3)
   - MMSProfileImagePicker (1.4.1):
     - MMSCameraViewController (~> 1.0.3)
+  - PhotoEditorSDK (7.2.0)
 
 DEPENDENCIES:
   - MMSProfileImagePicker
+  - PhotoEditorSDK (~> 7.2)
 
 SPEC CHECKSUMS:
   MMSCameraViewController: c32450a83d5ad18d38a1d85c68bf899362a93667
   MMSProfileImagePicker: fa3aee5746945f7bee2cb422bf51dd4478b94e39
+  PhotoEditorSDK: 12557cb3391f5f2ac7c268f18bb2a206254d83c9
 
-PODFILE CHECKSUM: cffa07b6f44a8bf686ae098094902e8cd3f2349e
+PODFILE CHECKSUM: 462fc3f22f889df32a6cf88308e8fb4eeb893d1a
 
 COCOAPODS: 1.2.0

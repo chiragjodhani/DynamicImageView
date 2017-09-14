@@ -45,5 +45,7 @@
 	<string>Editing Image</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Editing Image</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 </dict>
 </plist>

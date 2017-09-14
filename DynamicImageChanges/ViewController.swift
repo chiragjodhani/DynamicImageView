@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,UIScrollViewDelegate {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var ivImageView: UIImageView!
     @IBOutlet weak var vwSubView: UIView!
     @IBOutlet weak var ivSubImageView: UIImageView!
@@ -19,8 +20,13 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
     
     @IBOutlet weak var BottomView: UIView!
     @IBOutlet weak var btnSelectImage: UIButton!
+    
+    var imageView = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.delegate = self
+        imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
+        scrollView.addSubview(imageView)
         imagePicker.delegate = self
         self.vwSubView.isHidden = true
         self.BottomView.isHidden = true
@@ -31,22 +37,65 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
     @IBAction func btnSelectImage(_ sender: Any) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
-        imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        //imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         present(imagePicker, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            ivImageView.contentMode = .scaleToFill
-            ivImageView.image = pickedImage
-            self.vwSubView.isHidden = false
-            self.BottomView.isHidden = false
-            self.btnSelectImage.isHidden = true
-        }
+        let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+//        ivImageView.contentMode = .scaleToFill
+//        ivImageView.image = pickedImage
+        
+        imageView.image = pickedImage
+        imageView.contentMode = UIViewContentMode.center
+        imageView.frame = CGRect(x: 0, y: 0, width: pickedImage.size.width, height: pickedImage.size.height)
+        
+        scrollView.contentSize = pickedImage.size
+        
+        let scrollviewFrame = scrollView.frame
+        let scaleWidth = scrollviewFrame.size.width / scrollView.contentSize.width
+        let scaleHeight = scrollviewFrame.size.height / scrollView.contentSize.height
+        let minScale = min(scaleHeight,scaleWidth)
+        
+        scrollView.minimumZoomScale = minScale
+        scrollView.maximumZoomScale = 1
+        scrollView.zoomScale = minScale
+        centerScrollViewContents()
+        
+        
+        self.vwSubView.isHidden = false
+        self.BottomView.isHidden = false
+        self.btnSelectImage.isHidden = true
         dismiss(animated: true, completion: nil)
+    }
+    
+    func centerScrollViewContents(){
+        let boundsSize = scrollView.bounds.size
+        var contentsFrame = imageView.frame
+        if contentsFrame.size.width < boundsSize.width {
+            contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2
+        }else {
+            contentsFrame.origin.x = 0
+        }
+        
+        if contentsFrame.size.height < boundsSize.height {
+            contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2
+        }else {
+            contentsFrame.origin.y = 0
+        }
+        imageView.frame = contentsFrame
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
+    
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        centerScrollViewContents()
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
+    
     func draggedView(_ sender:UIPanGestureRecognizer){
         if sender.state == .began || sender.state == .changed || sender.state == .ended {
             var rec: CGRect = (sender.view?.frame)!
@@ -73,13 +122,36 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
         }
     }
     @IBAction func btnBorder(_ sender: Any) {
-//        self.ivImageView.layer.borderWidth = 5
-//        self.ivImageView.layer.borderColor = UIColor(white: 1.0, alpha: 0.5).cgColor
-//        self.ivImageView.layer.masksToBounds = true
-        self.ivImageView.addDashedBorder()
-    
+        UIGraphicsBeginImageContext(scrollView.bounds.size)
+        UIGraphicsEndImageContext()
+        self.scrollView.addDashedBorder()
     }
 
+    @IBAction func btnDotted(_ sender: Any) {
+        UIGraphicsBeginImageContext(scrollView.bounds.size)
+        UIGraphicsEndImageContext()
+       self.scrollView.addDottedBorder()
+    }
 
+    @IBAction func btnSimple(_ sender: Any) {
+        UIGraphicsBeginImageContext(scrollView.bounds.size)
+        UIGraphicsEndImageContext()
+        self.scrollView.layer.borderWidth = 5
+        self.scrollView.layer.borderColor = UIColor(white: 1.0, alpha: 0.5).cgColor
+        self.scrollView.layer.masksToBounds = true
+    }
+    @IBAction func btnSave(_ sender: UIButton) {
+        UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
+        let offSet = scrollView.contentOffset
+        UIGraphicsGetCurrentContext()?.translateBy(x: -offSet.x, y: -offSet.y)
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        UIGraphicsBeginImageContext(scrollView.bounds.size)
+        UIGraphicsEndImageContext()
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+        let alert = UIAlertController(title:"Image Saved", message: "Your Image has been saved to your camera roll", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 

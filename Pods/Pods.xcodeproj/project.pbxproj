@@ -10,40 +10,40 @@
 		0AB4DB5E72C2214AC66FAEDE5875A7B5 /* Pods-DynamicImageChangesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74987EFB596136279464F554A32BF8CA /* Pods-DynamicImageChangesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B01FFD4ECC721CB9288A7AEF2EC5AB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEAD157D0C1A943A945D97AFF1D6E64 /* Foundation.framework */; };
 		120DA5C07C8A47B09CA7E1CCEDC197E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEAD157D0C1A943A945D97AFF1D6E64 /* Foundation.framework */; };
-		15C776CE4FC1694164275B0E88B1047B /* MMSCameraViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9EF054A101566EE666478DCB7BC01 /* MMSCameraViewControllerExtensions.swift */; };
+		15C776CE4FC1694164275B0E88B1047B /* MMSCameraViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D55DEC9F3ACAE10232C64A88FE136 /* MMSCameraViewControllerExtensions.swift */; };
 		16093FA44587CAF1F30AF10EF99DB670 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E2C368E6AA38C0304CBE0E2A2C265E /* ImageIO.framework */; };
-		1AC02221349FC7B73A115FC7FE263DB9 /* MMSProfileImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9BB18B9538FE911287DDBABF65AFE /* MMSProfileImagePicker-dummy.m */; };
-		227D0DB355D778377E2D82CA593E4DBB /* MMSProfileImagePickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CCCA05A32611F31C31D780990DAF2C85 /* MMSProfileImagePickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AC02221349FC7B73A115FC7FE263DB9 /* MMSProfileImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDA69DB8926DA3CFF00ADAF2C1CCA9 /* MMSProfileImagePicker-dummy.m */; };
+		227D0DB355D778377E2D82CA593E4DBB /* MMSProfileImagePickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D56566D84F3B071D792606B43469A0C /* MMSProfileImagePickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		248E194A8EF7A193F8A27377EC10D6EC /* Pods-DynamicImageChanges-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5FCFA65F8D3B015B56A39FE365511 /* Pods-DynamicImageChanges-dummy.m */; };
 		28CBD1294916CE1009DC3719E4CF4D2A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0C9AEBB0467DD42D474E7E5F0B3EF8 /* AVFoundation.framework */; };
 		2AD559BF4DEA16FB6166E0C4BC5E1EC0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214A47946238D4D02705BFF1C0275645 /* CoreMedia.framework */; };
-		47AFB08300E00147FF3BD02633385A97 /* MMSProfileImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DBCD088F7E046DF41DFCBABB378AB4 /* MMSProfileImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47AFB08300E00147FF3BD02633385A97 /* MMSProfileImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9D1E355AC2CBA4E83C3286AF9033B9 /* MMSProfileImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D1CEC69CFE6814696C9724057316DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEAD157D0C1A943A945D97AFF1D6E64 /* Foundation.framework */; };
 		5097C20B7BE9C714F6CFFBB3C30B0B7D /* Pods-DynamicImageChangesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C9FCE85B024E01D591C812280D5059 /* Pods-DynamicImageChangesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DE2BE528C7B67F02683D96E0672633C /* Internationalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58358FC968656F4A08F8FAA07D4C8F91 /* Internationalization.swift */; };
-		80A41458A7AC89B80688E1313326ABB6 /* UIImage+Cropping.m in Sources */ = {isa = PBXBuildFile; fileRef = 2594367E01189285EB96D114C4CC8915 /* UIImage+Cropping.m */; };
-		82BE17E6973E0040450DFF11B1E2FE3E /* buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864D7B8CA88942768C9B7A70E0E45D34 /* buttons.xcassets */; };
-		87437670F1C126B2C24A61EFC00844BE /* Localized.strings in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EAC8913D5BA9BDDDAB012CF4262FA /* Localized.strings */; };
+		6DE2BE528C7B67F02683D96E0672633C /* Internationalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937EEABAA9E91268D864A64AD0D35BB /* Internationalization.swift */; };
+		80A41458A7AC89B80688E1313326ABB6 /* UIImage+Cropping.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4749CDCF5AFB5325CB6FF97DC4A6DE /* UIImage+Cropping.m */; };
+		82BE17E6973E0040450DFF11B1E2FE3E /* buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC50CEFC7CED618A1FE67805A9CA4D6 /* buttons.xcassets */; };
+		87437670F1C126B2C24A61EFC00844BE /* Localized.strings in Sources */ = {isa = PBXBuildFile; fileRef = BD06A1AEBE3BE49AFFD6982144C2B6D1 /* Localized.strings */; };
 		99D436184B999EB1A9A0E1FEB774BD85 /* Pods-DynamicImageChangesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4B8C41576A3FE0DA41D569CC66FD25 /* Pods-DynamicImageChangesTests-dummy.m */; };
 		9F8411AE276B28A94292DAF2516CD1F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEAD157D0C1A943A945D97AFF1D6E64 /* Foundation.framework */; };
-		A07514E3FB6F208DF428CCAF8022724D /* MMSCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D6CC19B4F625A584C9C09B81F3C567 /* MMSCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A07514E3FB6F208DF428CCAF8022724D /* MMSCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B64898951D8807CDD685E13A4B17496B /* MMSCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2A8287F5E00B668E96E7FDDA561FB66 /* MMSCameraViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8C580BB100F8EBFF2264F426191BE8 /* MMSCameraViewController.framework */; };
 		A3EC4A707B9E75E9E49718D7B8ADF4CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0C9AEBB0467DD42D474E7E5F0B3EF8 /* AVFoundation.framework */; };
 		A7F72B3FFC31F8F07927C2A7D05D97AA /* Pods-DynamicImageChanges-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE04171D6AE18559A4BEC034E55B4EB /* Pods-DynamicImageChanges-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B006C6A33CB2337B3A00C2C1A57E09E8 /* Localized.strings in Sources */ = {isa = PBXBuildFile; fileRef = BF3B0E20D6F59118FF79ABBE304836C6 /* Localized.strings */; };
-		BC44AE78971BD154212742243D83A008 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B207EA8690DFEAB909B9C14D40C6F1 /* Support.swift */; };
-		BC75E2E4F4F537FF3C539E7C95E679B9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4CAD81C95D851B9EA88CAB31D1867 /* CameraView.swift */; };
+		B006C6A33CB2337B3A00C2C1A57E09E8 /* Localized.strings in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEE553CA92A0CD24D8A248432C7B9 /* Localized.strings */; };
+		BC44AE78971BD154212742243D83A008 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D22AE49B556DA861A839A5605E8B5A /* Support.swift */; };
+		BC75E2E4F4F537FF3C539E7C95E679B9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BF276012AE08A94AC98F509AAE5098 /* CameraView.swift */; };
 		C6ACF3BEFCFFB92ED016880B1DFAB7E6 /* Pods-DynamicImageChangesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 829343D41326F75B770511D9A0B1BBA7 /* Pods-DynamicImageChangesUITests-dummy.m */; };
 		C97B161F07F5B66D41AE2588DA6B892A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914E1FC65E345681DC48F12E770B514B /* UIKit.framework */; };
 		CB4DAC73E90F85F6435802AEF387D0CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914E1FC65E345681DC48F12E770B514B /* UIKit.framework */; };
-		CE1E98D47072E377AD7C58C080643787 /* MMSCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA304C4AB04F9448AF3E22F99FC0D4B6 /* MMSCameraViewController.xib */; };
-		CEBD5257047853C118EFA008CE087B72 /* MMSProfileImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EB8B8DB019AC93D724A7313D532C23 /* MMSProfileImagePicker.m */; };
-		D6C500DB7D660D395EA44810C86EF82D /* MMSProfileImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5202B6FAAE5C7BEE675C5306D9903A1F /* MMSProfileImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D94A1FC15700C60A73F5E206834F1165 /* MMSCameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E473069A2BDB3CF1C8955CBA3C8064 /* MMSCameraViewDelegate.swift */; };
-		E0E9A4E04143B1EC473AB80ED73E563F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D668263266AC994CFF0BFCC8A065D688 /* Localizable.strings */; };
-		EE21C2706913D913B85C049278A831BF /* MMSCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD25F118F13BF229AFF2A0303301C /* MMSCameraViewController-dummy.m */; };
-		F7797C30A4A8B347D0F7C86F4EB73D3A /* MMSCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971411C88AAABF9BF31D76342A35CB6 /* MMSCameraViewController.swift */; };
-		FCEB1CE44EB0A491A89B0700D946DB57 /* UIImage+Cropping.h in Headers */ = {isa = PBXBuildFile; fileRef = A6978272C1F3798E1F8A4ED77A39E625 /* UIImage+Cropping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE1E98D47072E377AD7C58C080643787 /* MMSCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3853E4C306AFF5EE83BE831D10C53B /* MMSCameraViewController.xib */; };
+		CEBD5257047853C118EFA008CE087B72 /* MMSProfileImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10BB86E7D2039B9A7E1FB4AEA03264 /* MMSProfileImagePicker.m */; };
+		D6C500DB7D660D395EA44810C86EF82D /* MMSProfileImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4DE41ECF8FDF7BD8BA36FE0F21084F /* MMSProfileImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D94A1FC15700C60A73F5E206834F1165 /* MMSCameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBA0A6730C6F2A1CC9CF3204C5D7FA3 /* MMSCameraViewDelegate.swift */; };
+		E0E9A4E04143B1EC473AB80ED73E563F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BB94486FFBF80274429860F17CA702F /* Localizable.strings */; };
+		EE21C2706913D913B85C049278A831BF /* MMSCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB4A1EF9DB979A072F6489B5DFBDA3 /* MMSCameraViewController-dummy.m */; };
+		F7797C30A4A8B347D0F7C86F4EB73D3A /* MMSCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB551155580D26738AC6B2E2C68DC784 /* MMSCameraViewController.swift */; };
+		FCEB1CE44EB0A491A89B0700D946DB57 /* UIImage+Cropping.h in Headers */ = {isa = PBXBuildFile; fileRef = 3441CD19BC8EB5A2F5FDE0AB59D219A0 /* UIImage+Cropping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD9F8B6AA0EEE18E3D1736054F24B3B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEAD157D0C1A943A945D97AFF1D6E64 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,46 +73,43 @@
 
 /* Begin PBXFileReference section */
 		02AD5BFEE4FF3A4A1D3BFCCB682AA43A /* Pods-DynamicImageChangesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynamicImageChangesTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		054847DE0F2CEFA75717AA47A676EA24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0697B2D9E95492260C10A40914C06C7E /* Pods-DynamicImageChangesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicImageChangesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		074F41E4449CBE08E64102D85621C9FC /* Pods-DynamicImageChangesUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicImageChangesUITests-resources.sh"; sourceTree = "<group>"; };
-		0971411C88AAABF9BF31D76342A35CB6 /* MMSCameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewController.swift; path = MMSCameraViewController/Classes/MMSCameraViewController.swift; sourceTree = "<group>"; };
+		0A4749CDCF5AFB5325CB6FF97DC4A6DE /* UIImage+Cropping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Cropping.m"; path = "Pod/Classes/UIImage+Cropping.m"; sourceTree = "<group>"; };
+		1140678ACE87C74AEFEF84828526CE77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		130CE85D4B11EE59CA4DB742C6F7111B /* PESDKAnalyticsConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PESDKAnalyticsConstants.h; path = "pesdk-ios-build-7.2.0/PhotoEditorSDK.framework/Headers/PESDKAnalyticsConstants.h"; sourceTree = "<group>"; };
 		1483B3C54CA737FC99D23AC64A6DE6A5 /* Pods-DynamicImageChangesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicImageChangesUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1689EE5CA48A7EB205B2F54FB8050FA5 /* MMSProfileImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMSProfileImagePicker.modulemap; sourceTree = "<group>"; };
+		1A3D55DEC9F3ACAE10232C64A88FE136 /* MMSCameraViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewControllerExtensions.swift; path = MMSCameraViewController/Classes/MMSCameraViewControllerExtensions.swift; sourceTree = "<group>"; };
+		1BB94486FFBF80274429860F17CA702F /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C4B8C41576A3FE0DA41D569CC66FD25 /* Pods-DynamicImageChangesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DynamicImageChangesTests-dummy.m"; sourceTree = "<group>"; };
+		1C4DE41ECF8FDF7BD8BA36FE0F21084F /* MMSProfileImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSProfileImagePicker-umbrella.h"; sourceTree = "<group>"; };
 		214A47946238D4D02705BFF1C0275645 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
-		228DED486E2DDCB01725B4F1E7B7E6E9 /* MMSProfileImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSProfileImagePicker-prefix.pch"; sourceTree = "<group>"; };
-		2594367E01189285EB96D114C4CC8915 /* UIImage+Cropping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Cropping.m"; path = "Pod/Classes/UIImage+Cropping.m"; sourceTree = "<group>"; };
 		295607E491E20B456ED21FE9440B6B73 /* Pods-DynamicImageChanges.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicImageChanges.release.xcconfig"; sourceTree = "<group>"; };
+		2BEDA69DB8926DA3CFF00ADAF2C1CCA9 /* MMSProfileImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMSProfileImagePicker-dummy.m"; sourceTree = "<group>"; };
 		2F33F4D3E558A42D00035507681560B1 /* Pods-DynamicImageChanges-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicImageChanges-frameworks.sh"; sourceTree = "<group>"; };
 		30CA4F92BF01EBBF0C53031C55DF3DE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35B207EA8690DFEAB909B9C14D40C6F1 /* Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Support.swift; path = MMSCameraViewController/Classes/Support.swift; sourceTree = "<group>"; };
+		3441CD19BC8EB5A2F5FDE0AB59D219A0 /* UIImage+Cropping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Cropping.h"; path = "Pod/Classes/UIImage+Cropping.h"; sourceTree = "<group>"; };
 		39F64562E807E85A0472533BCE589423 /* Pods_DynamicImageChangesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DynamicImageChangesUITests.framework; path = "Pods-DynamicImageChangesUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8C580BB100F8EBFF2264F426191BE8 /* MMSCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMSCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C9FCE85B024E01D591C812280D5059 /* Pods-DynamicImageChangesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DynamicImageChangesUITests-umbrella.h"; sourceTree = "<group>"; };
-		45FDD25F118F13BF229AFF2A0303301C /* MMSCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMSCameraViewController-dummy.m"; sourceTree = "<group>"; };
-		5202B6FAAE5C7BEE675C5306D9903A1F /* MMSProfileImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSProfileImagePicker-umbrella.h"; sourceTree = "<group>"; };
-		56AC01AC9A943FA60E08DF8AEA398722 /* MMSCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMSCameraViewController.modulemap; sourceTree = "<group>"; };
-		58358FC968656F4A08F8FAA07D4C8F91 /* Internationalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internationalization.swift; path = MMSCameraViewController/Classes/Internationalization.swift; sourceTree = "<group>"; };
-		5A6EAC8913D5BA9BDDDAB012CF4262FA /* Localized.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localized.strings; path = Base.lproj/Localized.strings; sourceTree = "<group>"; };
+		4402B29241CD1DEAE2C985E5795C553D /* MMSProfileImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSProfileImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		4937EEABAA9E91268D864A64AD0D35BB /* Internationalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internationalization.swift; path = MMSCameraViewController/Classes/Internationalization.swift; sourceTree = "<group>"; };
+		5C001869B86A0570BAFBE180A3355257 /* MMSCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-prefix.pch"; sourceTree = "<group>"; };
 		5CC5FCFA65F8D3B015B56A39FE365511 /* Pods-DynamicImageChanges-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DynamicImageChanges-dummy.m"; sourceTree = "<group>"; };
-		5EE9EF054A101566EE666478DCB7BC01 /* MMSCameraViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewControllerExtensions.swift; path = MMSCameraViewController/Classes/MMSCameraViewControllerExtensions.swift; sourceTree = "<group>"; };
-		64D6CC19B4F625A584C9C09B81F3C567 /* MMSCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-umbrella.h"; sourceTree = "<group>"; };
+		5D56566D84F3B071D792606B43469A0C /* MMSProfileImagePickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSProfileImagePickerDelegate.h; path = Pod/Classes/MMSProfileImagePickerDelegate.h; sourceTree = "<group>"; };
+		638CCEC4030581F4C0E62444A2ACB4C5 /* PhotoEditorSDK-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PhotoEditorSDK-Swift.h"; path = "pesdk-ios-build-7.2.0/PhotoEditorSDK.framework/Headers/PhotoEditorSDK-Swift.h"; sourceTree = "<group>"; };
 		66D333173F51251604CAF45442156B7F /* Pods-DynamicImageChangesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicImageChangesTests-resources.sh"; sourceTree = "<group>"; };
 		6BD6AE12FB85744670E2FCE821C66CB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73E473069A2BDB3CF1C8955CBA3C8064 /* MMSCameraViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewDelegate.swift; path = MMSCameraViewController/Classes/MMSCameraViewDelegate.swift; sourceTree = "<group>"; };
 		74987EFB596136279464F554A32BF8CA /* Pods-DynamicImageChangesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DynamicImageChangesTests-umbrella.h"; sourceTree = "<group>"; };
-		74C4CAD81C95D851B9EA88CAB31D1867 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = MMSCameraViewController/Classes/CameraView.swift; sourceTree = "<group>"; };
-		74C667EFAF3B41FDEC897937085F97B3 /* MMSCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-prefix.pch"; sourceTree = "<group>"; };
 		75DB26D0D2A8FB9A8394DB08FF99612D /* Pods-DynamicImageChangesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DynamicImageChangesUITests.modulemap"; sourceTree = "<group>"; };
+		76D22AE49B556DA861A839A5605E8B5A /* Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Support.swift; path = MMSCameraViewController/Classes/Support.swift; sourceTree = "<group>"; };
+		7BBAF1F0C85FA57AC1D65DAC55E12F55 /* PhotoEditorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotoEditorSDK.framework; path = "pesdk-ios-build-7.2.0/PhotoEditorSDK.framework"; sourceTree = "<group>"; };
 		7E6E102278F5430111F025E97DF639B1 /* Pods-DynamicImageChanges-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DynamicImageChanges-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7F7C78E8DA15DF73D7B57BEC544D0ED5 /* Pods-DynamicImageChangesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicImageChangesTests.release.xcconfig"; sourceTree = "<group>"; };
 		825992886836C825FB3A1E50CB3EBC2F /* Pods-DynamicImageChangesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DynamicImageChangesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		829343D41326F75B770511D9A0B1BBA7 /* Pods-DynamicImageChangesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DynamicImageChangesUITests-dummy.m"; sourceTree = "<group>"; };
 		851463C5A733E07DDFA6F516DAB8C002 /* Pods-DynamicImageChanges-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynamicImageChanges-acknowledgements.plist"; sourceTree = "<group>"; };
-		864D7B8CA88942768C9B7A70E0E45D34 /* buttons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = buttons.xcassets; path = MMSCameraViewController/Assets/buttons.xcassets; sourceTree = "<group>"; };
 		86D39FADE8BBB4EC80A3147E1E69E286 /* Pods-DynamicImageChangesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicImageChangesUITests-frameworks.sh"; sourceTree = "<group>"; };
-		8A06C94F63C5A6C3114A8E10C9E717AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C541408650AAD132FA16EC5275660F3 /* Pods-DynamicImageChangesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynamicImageChangesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8DE04171D6AE18559A4BEC034E55B4EB /* Pods-DynamicImageChanges-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DynamicImageChanges-umbrella.h"; sourceTree = "<group>"; };
 		8F0C9AEBB0467DD42D474E7E5F0B3EF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -120,27 +117,35 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96EE71B5BC9A8C76AFF6BBBB6A7DF924 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEAD157D0C1A943A945D97AFF1D6E64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A6978272C1F3798E1F8A4ED77A39E625 /* UIImage+Cropping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Cropping.h"; path = "Pod/Classes/UIImage+Cropping.h"; sourceTree = "<group>"; };
-		B2E9BB18B9538FE911287DDBABF65AFE /* MMSProfileImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMSProfileImagePicker-dummy.m"; sourceTree = "<group>"; };
+		9BAB4A1EF9DB979A072F6489B5DFBDA3 /* MMSCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMSCameraViewController-dummy.m"; sourceTree = "<group>"; };
+		9D9D1E355AC2CBA4E83C3286AF9033B9 /* MMSProfileImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSProfileImagePicker.h; path = Pod/Classes/MMSProfileImagePicker.h; sourceTree = "<group>"; };
+		9DBA0A6730C6F2A1CC9CF3204C5D7FA3 /* MMSCameraViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewDelegate.swift; path = MMSCameraViewController/Classes/MMSCameraViewDelegate.swift; sourceTree = "<group>"; };
+		AA10BB86E7D2039B9A7E1FB4AEA03264 /* MMSProfileImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMSProfileImagePicker.m; path = Pod/Classes/MMSProfileImagePicker.m; sourceTree = "<group>"; };
+		B64898951D8807CDD685E13A4B17496B /* MMSCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-umbrella.h"; sourceTree = "<group>"; };
 		B9E2C368E6AA38C0304CBE0E2A2C265E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		BA304C4AB04F9448AF3E22F99FC0D4B6 /* MMSCameraViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMSCameraViewController.xib; path = Base.lproj/MMSCameraViewController.xib; sourceTree = "<group>"; };
-		BF3B0E20D6F59118FF79ABBE304836C6 /* Localized.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localized.strings; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
-		C940E08306271A4C73330F9C111F9DC2 /* MMSProfileImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMSProfileImagePicker.xcconfig; sourceTree = "<group>"; };
-		CC5F488715F1B5F57F3B231EE3BF9586 /* MMSCameraViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMSCameraViewController.xcconfig; sourceTree = "<group>"; };
+		BC3853E4C306AFF5EE83BE831D10C53B /* MMSCameraViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMSCameraViewController.xib; path = Base.lproj/MMSCameraViewController.xib; sourceTree = "<group>"; };
+		BC49D6B59DF9C17F22E99A388F27959B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD06A1AEBE3BE49AFFD6982144C2B6D1 /* Localized.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localized.strings; path = Base.lproj/Localized.strings; sourceTree = "<group>"; };
+		C1E351E741EA666B6841D13B5C2516E9 /* PESDKRenderMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PESDKRenderMode.h; path = "pesdk-ios-build-7.2.0/PhotoEditorSDK.framework/Headers/PESDKRenderMode.h"; sourceTree = "<group>"; };
+		C7696FE7CED6CE1682FFB5656B23867B /* MMSProfileImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMSProfileImagePicker.xcconfig; sourceTree = "<group>"; };
 		CC7710AB358D160AEF925FAF49308C3A /* Pods-DynamicImageChangesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicImageChangesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CCCA05A32611F31C31D780990DAF2C85 /* MMSProfileImagePickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSProfileImagePickerDelegate.h; path = Pod/Classes/MMSProfileImagePickerDelegate.h; sourceTree = "<group>"; };
 		CDBC29E1854DE2E265DB67CAF9575EA1 /* Pods-DynamicImageChangesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicImageChangesTests-frameworks.sh"; sourceTree = "<group>"; };
 		CECBAFD87E045C92436DB0585174EFC2 /* Pods-DynamicImageChanges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynamicImageChanges.debug.xcconfig"; sourceTree = "<group>"; };
 		D236E7956CA2FD634492A7351FD4E062 /* MMSProfileImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMSProfileImagePicker.framework; path = MMSProfileImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F375EBC86B841DB4349C881A921EF4 /* Pods_DynamicImageChangesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DynamicImageChangesTests.framework; path = "Pods-DynamicImageChangesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D668263266AC994CFF0BFCC8A065D688 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D6EB8B8DB019AC93D724A7313D532C23 /* MMSProfileImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMSProfileImagePicker.m; path = Pod/Classes/MMSProfileImagePicker.m; sourceTree = "<group>"; };
+		D3F4674251706DE4CA925CBEAC479555 /* MMSProfileImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMSProfileImagePicker.modulemap; sourceTree = "<group>"; };
 		D99F8CEF6C2283597D9C74CDC7E61084 /* Pods-DynamicImageChangesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DynamicImageChangesTests.modulemap"; sourceTree = "<group>"; };
 		D9BC9A2301CB2AE2868C4184251F07F2 /* Pods-DynamicImageChangesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DynamicImageChangesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D9BF276012AE08A94AC98F509AAE5098 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = MMSCameraViewController/Classes/CameraView.swift; sourceTree = "<group>"; };
+		DC3AEE553CA92A0CD24D8A248432C7B9 /* Localized.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localized.strings; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
+		DDC50CEFC7CED618A1FE67805A9CA4D6 /* buttons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = buttons.xcassets; path = MMSCameraViewController/Assets/buttons.xcassets; sourceTree = "<group>"; };
+		E21DFFF3F928D710C3A3071AE58C9266 /* PhotoEditorSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PhotoEditorSDK.h; path = "pesdk-ios-build-7.2.0/PhotoEditorSDK.framework/Headers/PhotoEditorSDK.h"; sourceTree = "<group>"; };
 		E251DB831E5806AFEF2BDF662728E719 /* MMSCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMSCameraViewController.framework; path = MMSCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB551155580D26738AC6B2E2C68DC784 /* MMSCameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewController.swift; path = MMSCameraViewController/Classes/MMSCameraViewController.swift; sourceTree = "<group>"; };
 		EBA822B7D0BD0FCC08C8DB38664A686B /* Pods-DynamicImageChanges.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DynamicImageChanges.modulemap"; sourceTree = "<group>"; };
 		EEFED93A95C226740792741D70185406 /* Pods-DynamicImageChanges-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynamicImageChanges-resources.sh"; sourceTree = "<group>"; };
-		F3DBCD088F7E046DF41DFCBABB378AB4 /* MMSProfileImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSProfileImagePicker.h; path = Pod/Classes/MMSProfileImagePicker.h; sourceTree = "<group>"; };
+		F89D32E4C73C5F33C93BF2AFA0D876FD /* MMSCameraViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMSCameraViewController.xcconfig; sourceTree = "<group>"; };
+		FE8734D76F2032A01B81A7E9F2411C67 /* MMSCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMSCameraViewController.modulemap; sourceTree = "<group>"; };
 		FF31E7D837120579D493EF89BA62CE90 /* Pods_DynamicImageChanges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DynamicImageChanges.framework; path = "Pods-DynamicImageChanges.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +200,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B9E77659CAF981A06D5C5A04906DDF /* MMSProfileImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				5DE389858ABA1B106447985A7BCE8AD9 /* Localized.strings */,
+				9D9D1E355AC2CBA4E83C3286AF9033B9 /* MMSProfileImagePicker.h */,
+				AA10BB86E7D2039B9A7E1FB4AEA03264 /* MMSProfileImagePicker.m */,
+				5D56566D84F3B071D792606B43469A0C /* MMSProfileImagePickerDelegate.h */,
+				3441CD19BC8EB5A2F5FDE0AB59D219A0 /* UIImage+Cropping.h */,
+				0A4749CDCF5AFB5325CB6FF97DC4A6DE /* UIImage+Cropping.m */,
+				6B6E29375E1671FADF383BF9052DD49E /* Support Files */,
+			);
+			name = MMSProfileImagePicker;
+			path = MMSProfileImagePicker;
+			sourceTree = "<group>";
+		};
 		1B8A2808FB2DB4F2FCB6C1854A2930E4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +223,20 @@
 				DFB769EF0E27EACED931B910E8DA32C2 /* Pods-DynamicImageChangesUITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		60D815D43C5AE8AAAEB5AA826B9FB463 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1140678ACE87C74AEFEF84828526CE77 /* Info.plist */,
+				FE8734D76F2032A01B81A7E9F2411C67 /* MMSCameraViewController.modulemap */,
+				F89D32E4C73C5F33C93BF2AFA0D876FD /* MMSCameraViewController.xcconfig */,
+				9BAB4A1EF9DB979A072F6489B5DFBDA3 /* MMSCameraViewController-dummy.m */,
+				5C001869B86A0570BAFBE180A3355257 /* MMSCameraViewController-prefix.pch */,
+				B64898951D8807CDD685E13A4B17496B /* MMSCameraViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMSCameraViewController";
 			sourceTree = "<group>";
 		};
 		681F4D9FF17AE1AE718B498292177E88 /* iOS */ = {
@@ -217,27 +251,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		711E89A7FE94712EEE6973E91CCCFA01 /* Pods */ = {
+		6B6E29375E1671FADF383BF9052DD49E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				857E1EE1C453FA1413B7B100AA848F1B /* MMSCameraViewController */,
-				CCD78B1101C79583C9F3BAB462105242 /* MMSProfileImagePicker */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		79193FCFE68BAAC3AFDF7536611D4C15 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				054847DE0F2CEFA75717AA47A676EA24 /* Info.plist */,
-				56AC01AC9A943FA60E08DF8AEA398722 /* MMSCameraViewController.modulemap */,
-				CC5F488715F1B5F57F3B231EE3BF9586 /* MMSCameraViewController.xcconfig */,
-				45FDD25F118F13BF229AFF2A0303301C /* MMSCameraViewController-dummy.m */,
-				74C667EFAF3B41FDEC897937085F97B3 /* MMSCameraViewController-prefix.pch */,
-				64D6CC19B4F625A584C9C09B81F3C567 /* MMSCameraViewController-umbrella.h */,
+				BC49D6B59DF9C17F22E99A388F27959B /* Info.plist */,
+				D3F4674251706DE4CA925CBEAC479555 /* MMSProfileImagePicker.modulemap */,
+				C7696FE7CED6CE1682FFB5656B23867B /* MMSProfileImagePicker.xcconfig */,
+				2BEDA69DB8926DA3CFF00ADAF2C1CCA9 /* MMSProfileImagePicker-dummy.m */,
+				4402B29241CD1DEAE2C985E5795C553D /* MMSProfileImagePicker-prefix.pch */,
+				1C4DE41ECF8FDF7BD8BA36FE0F21084F /* MMSProfileImagePicker-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MMSCameraViewController";
+			path = "../Target Support Files/MMSProfileImagePicker";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -245,7 +270,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				EC186ADB0CA5222FF93228CF4EBB8D16 /* Frameworks */,
-				711E89A7FE94712EEE6973E91CCCFA01 /* Pods */,
+				BB4CF1F8661D397064894371D77B6B57 /* Pods */,
 				AE008261EF2DF321C7CFA1EC76E38D1C /* Products */,
 				1B8A2808FB2DB4F2FCB6C1854A2930E4 /* Targets Support Files */,
 			);
@@ -269,30 +294,12 @@
 			path = "Target Support Files/Pods-DynamicImageChanges";
 			sourceTree = "<group>";
 		};
-		857E1EE1C453FA1413B7B100AA848F1B /* MMSCameraViewController */ = {
+		93650F94B1DAB649EFFA66923AA40512 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74C4CAD81C95D851B9EA88CAB31D1867 /* CameraView.swift */,
-				58358FC968656F4A08F8FAA07D4C8F91 /* Internationalization.swift */,
-				0971411C88AAABF9BF31D76342A35CB6 /* MMSCameraViewController.swift */,
-				5EE9EF054A101566EE666478DCB7BC01 /* MMSCameraViewControllerExtensions.swift */,
-				73E473069A2BDB3CF1C8955CBA3C8064 /* MMSCameraViewDelegate.swift */,
-				35B207EA8690DFEAB909B9C14D40C6F1 /* Support.swift */,
-				9A58F6369F78460E7CB68454747BE68A /* Resources */,
-				79193FCFE68BAAC3AFDF7536611D4C15 /* Support Files */,
+				7BBAF1F0C85FA57AC1D65DAC55E12F55 /* PhotoEditorSDK.framework */,
 			);
-			name = MMSCameraViewController;
-			path = MMSCameraViewController;
-			sourceTree = "<group>";
-		};
-		9A58F6369F78460E7CB68454747BE68A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				864D7B8CA88942768C9B7A70E0E45D34 /* buttons.xcassets */,
-				95D6499E8FF58388CB9EF09D66D690D6 /* Localizable.strings */,
-				DA89ABC978D75ECE6B0E1CF83A663C15 /* MMSCameraViewController.xib */,
-			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE008261EF2DF321C7CFA1EC76E38D1C /* Products */ = {
@@ -307,19 +314,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCD78B1101C79583C9F3BAB462105242 /* MMSProfileImagePicker */ = {
+		BB4CF1F8661D397064894371D77B6B57 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9C12F02B7FB50B396D26D65B8D9E3917 /* Localized.strings */,
-				F3DBCD088F7E046DF41DFCBABB378AB4 /* MMSProfileImagePicker.h */,
-				D6EB8B8DB019AC93D724A7313D532C23 /* MMSProfileImagePicker.m */,
-				CCCA05A32611F31C31D780990DAF2C85 /* MMSProfileImagePickerDelegate.h */,
-				A6978272C1F3798E1F8A4ED77A39E625 /* UIImage+Cropping.h */,
-				2594367E01189285EB96D114C4CC8915 /* UIImage+Cropping.m */,
-				EEACD0B46107D874EE4D42EC057F117C /* Support Files */,
+				C4F5BAFAB010BF67DB1A36E677F1D8CD /* MMSCameraViewController */,
+				17B9E77659CAF981A06D5C5A04906DDF /* MMSProfileImagePicker */,
+				C463A61193DB4E6F1DE5EBDA8D29BF53 /* PhotoEditorSDK */,
 			);
-			name = MMSProfileImagePicker;
-			path = MMSProfileImagePicker;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C463A61193DB4E6F1DE5EBDA8D29BF53 /* PhotoEditorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				130CE85D4B11EE59CA4DB742C6F7111B /* PESDKAnalyticsConstants.h */,
+				C1E351E741EA666B6841D13B5C2516E9 /* PESDKRenderMode.h */,
+				E21DFFF3F928D710C3A3071AE58C9266 /* PhotoEditorSDK.h */,
+				638CCEC4030581F4C0E62444A2ACB4C5 /* PhotoEditorSDK-Swift.h */,
+				93650F94B1DAB649EFFA66923AA40512 /* Frameworks */,
+			);
+			name = PhotoEditorSDK;
+			path = PhotoEditorSDK;
+			sourceTree = "<group>";
+		};
+		C4F5BAFAB010BF67DB1A36E677F1D8CD /* MMSCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D9BF276012AE08A94AC98F509AAE5098 /* CameraView.swift */,
+				4937EEABAA9E91268D864A64AD0D35BB /* Internationalization.swift */,
+				EB551155580D26738AC6B2E2C68DC784 /* MMSCameraViewController.swift */,
+				1A3D55DEC9F3ACAE10232C64A88FE136 /* MMSCameraViewControllerExtensions.swift */,
+				9DBA0A6730C6F2A1CC9CF3204C5D7FA3 /* MMSCameraViewDelegate.swift */,
+				76D22AE49B556DA861A839A5605E8B5A /* Support.swift */,
+				E3EDCC517460903021A4BEB1DF8AE0EF /* Resources */,
+				60D815D43C5AE8AAAEB5AA826B9FB463 /* Support Files */,
+			);
+			name = MMSCameraViewController;
+			path = MMSCameraViewController;
 			sourceTree = "<group>";
 		};
 		DFB769EF0E27EACED931B910E8DA32C2 /* Pods-DynamicImageChangesUITests */ = {
@@ -338,6 +369,16 @@
 			);
 			name = "Pods-DynamicImageChangesUITests";
 			path = "Target Support Files/Pods-DynamicImageChangesUITests";
+			sourceTree = "<group>";
+		};
+		E3EDCC517460903021A4BEB1DF8AE0EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC50CEFC7CED618A1FE67805A9CA4D6 /* buttons.xcassets */,
+				DEDD70D0664EE31D10152E764281590F /* Localizable.strings */,
+				A98ACB09280FCBB88DCE9A931D13740A /* MMSCameraViewController.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E81FABA7A88EE6488A489759268EE772 /* Pods-DynamicImageChangesTests */ = {
@@ -365,20 +406,6 @@
 				681F4D9FF17AE1AE718B498292177E88 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EEACD0B46107D874EE4D42EC057F117C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8A06C94F63C5A6C3114A8E10C9E717AB /* Info.plist */,
-				1689EE5CA48A7EB205B2F54FB8050FA5 /* MMSProfileImagePicker.modulemap */,
-				C940E08306271A4C73330F9C111F9DC2 /* MMSProfileImagePicker.xcconfig */,
-				B2E9BB18B9538FE911287DDBABF65AFE /* MMSProfileImagePicker-dummy.m */,
-				228DED486E2DDCB01725B4F1E7B7E6E9 /* MMSProfileImagePicker-prefix.pch */,
-				5202B6FAAE5C7BEE675C5306D9903A1F /* MMSProfileImagePicker-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MMSProfileImagePicker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,31 +664,31 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		95D6499E8FF58388CB9EF09D66D690D6 /* Localizable.strings */ = {
+		5DE389858ABA1B106447985A7BCE8AD9 /* Localized.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D668263266AC994CFF0BFCC8A065D688 /* Localizable.strings */,
-			);
-			name = Localizable.strings;
-			path = MMSCameraViewController/Assets;
-			sourceTree = "<group>";
-		};
-		9C12F02B7FB50B396D26D65B8D9E3917 /* Localized.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A6EAC8913D5BA9BDDDAB012CF4262FA /* Localized.strings */,
-				BF3B0E20D6F59118FF79ABBE304836C6 /* Localized.strings */,
+				BD06A1AEBE3BE49AFFD6982144C2B6D1 /* Localized.strings */,
+				DC3AEE553CA92A0CD24D8A248432C7B9 /* Localized.strings */,
 			);
 			name = Localized.strings;
 			path = Pod/Assets;
 			sourceTree = "<group>";
 		};
-		DA89ABC978D75ECE6B0E1CF83A663C15 /* MMSCameraViewController.xib */ = {
+		A98ACB09280FCBB88DCE9A931D13740A /* MMSCameraViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BA304C4AB04F9448AF3E22F99FC0D4B6 /* MMSCameraViewController.xib */,
+				BC3853E4C306AFF5EE83BE831D10C53B /* MMSCameraViewController.xib */,
 			);
 			name = MMSCameraViewController.xib;
+			path = MMSCameraViewController/Assets;
+			sourceTree = "<group>";
+		};
+		DEDD70D0664EE31D10152E764281590F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BB94486FFBF80274429860F17CA702F /* Localizable.strings */,
+			);
+			name = Localizable.strings;
 			path = MMSCameraViewController/Assets;
 			sourceTree = "<group>";
 		};
@@ -816,7 +843,7 @@
 		};
 		5711C0777C57A2E7237E4D14150C9C13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C940E08306271A4C73330F9C111F9DC2 /* MMSProfileImagePicker.xcconfig */;
+			baseConfigurationReference = C7696FE7CED6CE1682FFB5656B23867B /* MMSProfileImagePicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -848,7 +875,7 @@
 		};
 		6A2C0A495A258B1FDC23E68CE0EE6D92 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC5F488715F1B5F57F3B231EE3BF9586 /* MMSCameraViewController.xcconfig */;
+			baseConfigurationReference = F89D32E4C73C5F33C93BF2AFA0D876FD /* MMSCameraViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -880,7 +907,7 @@
 		};
 		966F8A3B8AE7EC0F00FC7C72039032C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC5F488715F1B5F57F3B231EE3BF9586 /* MMSCameraViewController.xcconfig */;
+			baseConfigurationReference = F89D32E4C73C5F33C93BF2AFA0D876FD /* MMSCameraViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1062,7 +1089,7 @@
 		};
 		CB0048E0941FD51CF95BB580C95D5F9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C940E08306271A4C73330F9C111F9DC2 /* MMSProfileImagePicker.xcconfig */;
+			baseConfigurationReference = C7696FE7CED6CE1682FFB5656B23867B /* MMSProfileImagePicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

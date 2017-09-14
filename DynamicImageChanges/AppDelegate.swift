@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
         return true
     }
 
@@ -59,25 +59,24 @@ extension UIView {
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 5).cgPath
         self.layer.addSublayer(shapeLayer)
     }
-}
-extension UIImage {
-    static func drawDottedImage(width: CGFloat, height: CGFloat, color: UIColor) -> UIImage {
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: 1.0, y: 1.0))
-        path.addLine(to: CGPoint(x: width, y: 1))
-        path.lineWidth = 1.5
-        let dashes: [CGFloat] = [path.lineWidth, path.lineWidth * 5]
-        path.setLineDash(dashes, count: 2, phase: 0)
-        path.lineCapStyle = .butt
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: width, height: height), false, 2)
-        color.setStroke()
-        path.stroke()
-        
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        
-        return image
+    
+     func addDottedBorder() {
+        let color = UIColor.red.cgColor
+        let shapeLayer:CAShapeLayer = CAShapeLayer()
+        let frameSize = self.frame.size
+        let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
+        shapeLayer.bounds = shapeRect
+        shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.strokeColor = color
+        shapeLayer.lineWidth = 3.0
+       // shapeLayer.cornerRadius = 4
+        shapeLayer.lineJoin = kCALineCapRound
+        shapeLayer.lineDashPattern = [3,3]
+        shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 5).cgPath
+        self.layer.addSublayer(shapeLayer)
     }
 }
+
 
 

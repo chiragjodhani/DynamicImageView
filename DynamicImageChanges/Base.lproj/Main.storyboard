@@ -22,11 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoeditorsdk-export.png" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-6W-8LJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-6W-8LJ">
                                 <rect key="frame" x="16" y="28" width="343" height="561"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDF-hx-k0k">
+                                <rect key="frame" x="16" y="28" width="343" height="561"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-eu-795">
-                                <rect key="frame" x="24" y="41" width="124" height="57"/>
+                                <rect key="frame" x="16" y="41" width="124" height="57"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label" translatesAutoresizingMaskIntoConstraints="NO" id="MOf-hR-M8A">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="57"/>
@@ -72,22 +76,31 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRg-Fm-XCG">
                                                 <rect key="frame" x="0.0" y="0.0" width="57" height="50"/>
-                                                <state key="normal" title="Border"/>
+                                                <state key="normal" title="Simple"/>
                                                 <connections>
-                                                    <action selector="btnBorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgH-oV-zhg"/>
+                                                    <action selector="btnSimple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAS-oh-4Q7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-en-PEu">
                                                 <rect key="frame" x="57" y="0.0" width="57.5" height="50"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Dotted"/>
+                                                <connections>
+                                                    <action selector="btnDotted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3R-vH-7fI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-X1-LPS">
                                                 <rect key="frame" x="114.5" y="0.0" width="57" height="50"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Line"/>
+                                                <connections>
+                                                    <action selector="btnBorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0g0-97-gl4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-bn-FYk">
                                                 <rect key="frame" x="171.5" y="0.0" width="57" height="50"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P2S-tD-4Zi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33y-pO-wJ1">
                                                 <rect key="frame" x="228.5" y="0.0" width="57.5" height="50"/>
@@ -111,6 +124,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="SDF-hx-k0k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2pd-wf-3pm"/>
                             <constraint firstItem="3Uw-dK-thM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5bf-4u-Ji9"/>
                             <constraint firstItem="Nvr-CW-UCD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5vF-gd-3Fm"/>
                             <constraint firstItem="Nvr-CW-UCD" firstAttribute="top" secondItem="VH9-6W-8LJ" secondAttribute="bottom" constant="8" id="73o-UT-8Ci"/>
@@ -120,10 +134,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nvr-CW-UCD" secondAttribute="bottom" constant="20" id="Esf-wV-vNw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Uw-dK-thM" secondAttribute="bottom" constant="20" id="G45-jk-XsZ"/>
                             <constraint firstItem="VH9-6W-8LJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QQe-yu-ZYz"/>
+                            <constraint firstItem="3Uw-dK-thM" firstAttribute="top" secondItem="SDF-hx-k0k" secondAttribute="bottom" constant="8" id="VIX-v3-A3i"/>
+                            <constraint firstItem="k7O-eu-795" firstAttribute="leading" secondItem="SDF-hx-k0k" secondAttribute="leading" id="bTG-Pf-1r7"/>
                             <constraint firstItem="3Uw-dK-thM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ctK-BO-Ozn"/>
+                            <constraint firstItem="SDF-hx-k0k" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g4N-1i-jgT"/>
+                            <constraint firstItem="SDF-hx-k0k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="h5M-i5-aVg"/>
                             <constraint firstItem="Nvr-CW-UCD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oWe-94-mk5"/>
-                            <constraint firstItem="VH9-6W-8LJ" firstAttribute="top" secondItem="k7O-eu-795" secondAttribute="bottom" constant="-70" id="pSv-dn-Nuo"/>
-                            <constraint firstItem="k7O-eu-795" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="ra6-OA-TGr"/>
+                            <constraint firstItem="SDF-hx-k0k" firstAttribute="top" secondItem="k7O-eu-795" secondAttribute="bottom" constant="-70" id="uQc-HO-aeG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -132,6 +149,7 @@
                         <outlet property="ivImageView" destination="VH9-6W-8LJ" id="bdm-YT-0qR"/>
                         <outlet property="ivSubImageView" destination="MOf-hR-M8A" id="vz4-dt-8Fl"/>
                         <outlet property="lblSubView" destination="UdQ-Qf-feo" id="316-Od-sb7"/>
+                        <outlet property="scrollView" destination="SDF-hx-k0k" id="oba-jg-e3G"/>
                         <outlet property="vwSubView" destination="k7O-eu-795" id="1Rp-Cu-Z7N"/>
                     </connections>
                 </viewController>
@@ -139,9 +157,64 @@
             </objects>
             <point key="canvasLocation" x="116" y="122.78860569715144"/>
         </scene>
+        <!--Image Crop View Controller-->
+        <scene sceneID="bWY-sw-Jq8">
+            <objects>
+                <viewController id="afl-Mz-TVg" customClass="ImageCropViewController" customModule="DynamicImageChanges" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vrc-TV-IAY"/>
+                        <viewControllerLayoutGuide type="bottom" id="bRx-Dz-dAe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AKE-jr-Pd0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Cropped" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0x-XG-iJB">
+                                <rect key="frame" x="97" y="20" width="180" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-VS-VcD">
+                                <rect key="frame" x="62" y="209" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="RXg-4C-3GU"/>
+                                    <constraint firstAttribute="width" constant="250" id="ke8-Ne-M6D"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81I-Pk-Ujr">
+                                <rect key="frame" x="134" y="600" width="108" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="Zqc-6h-eBw"/>
+                                    <constraint firstAttribute="height" constant="47" id="y6m-wo-8iX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="25"/>
+                                <state key="normal" title="Crop &amp; Save"/>
+                                <connections>
+                                    <action selector="btnCropSave:" destination="afl-Mz-TVg" eventType="touchUpInside" id="L6y-XU-bJv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v0x-XG-iJB" firstAttribute="top" secondItem="Vrc-TV-IAY" secondAttribute="bottom" id="0XE-FC-Uao"/>
+                            <constraint firstItem="v0x-XG-iJB" firstAttribute="centerX" secondItem="AKE-jr-Pd0" secondAttribute="centerX" id="OUj-JK-EsX"/>
+                            <constraint firstItem="2ex-VS-VcD" firstAttribute="centerY" secondItem="AKE-jr-Pd0" secondAttribute="centerY" id="WO6-u5-Wur"/>
+                            <constraint firstItem="bRx-Dz-dAe" firstAttribute="top" secondItem="81I-Pk-Ujr" secondAttribute="bottom" constant="20" id="bT7-fA-xE2"/>
+                            <constraint firstItem="81I-Pk-Ujr" firstAttribute="centerX" secondItem="AKE-jr-Pd0" secondAttribute="centerX" id="cIc-IY-irE"/>
+                            <constraint firstItem="2ex-VS-VcD" firstAttribute="centerX" secondItem="AKE-jr-Pd0" secondAttribute="centerX" id="y8F-l1-brM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="2ex-VS-VcD" id="LGW-SS-AMX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LcR-Tc-Fyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="125.4872563718141"/>
+        </scene>
     </scenes>
     <resources>
         <image name="label" width="512" height="512"/>
-        <image name="photoeditorsdk-export.png" width="800" height="571"/>
     </resources>
 </document>
