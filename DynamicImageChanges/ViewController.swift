@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
@@ -22,31 +21,31 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
     @IBOutlet weak var btnSelectImage: UIButton!
     
     var imageView = UIImageView()
+    var subView = UIView()
+    var subRect: CGRect!
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
         imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
         scrollView.addSubview(imageView)
+        scrollView.addSubview(subView)
         imagePicker.delegate = self
         self.vwSubView.isHidden = true
         self.BottomView.isHidden = true
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(ViewController.draggedView(_:)))
         self.vwSubView.isUserInteractionEnabled = true
         self.vwSubView.addGestureRecognizer(panGesture)
+        //imageView.addSubview(vwSubView)
     }
     @IBAction func btnSelectImage(_ sender: Any) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
-        //imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         present(imagePicker, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-//        ivImageView.contentMode = .scaleToFill
-//        ivImageView.image = pickedImage
-        
         imageView.image = pickedImage
-        imageView.contentMode = UIViewContentMode.center
+        imageView.contentMode = UIViewContentMode.scaleToFill
         imageView.frame = CGRect(x: 0, y: 0, width: pickedImage.size.width, height: pickedImage.size.height)
         
         scrollView.contentSize = pickedImage.size
@@ -118,22 +117,36 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
                 }
                 sender.view?.frame = rec
                 sender.setTranslation(CGPoint.zero, in: self.ivImageView)
+                subRect = rec
+
             }
         }
     }
     @IBAction func btnBorder(_ sender: Any) {
+        UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
+        let offSet = scrollView.contentOffset
+        UIGraphicsGetCurrentContext()?.translateBy(x: -offSet.x, y: -offSet.y)
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
         UIGraphicsBeginImageContext(scrollView.bounds.size)
         UIGraphicsEndImageContext()
         self.scrollView.addDashedBorder()
     }
 
     @IBAction func btnDotted(_ sender: Any) {
+        UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
+        let offSet = scrollView.contentOffset
+        UIGraphicsGetCurrentContext()?.translateBy(x: -offSet.x, y: -offSet.y)
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
         UIGraphicsBeginImageContext(scrollView.bounds.size)
         UIGraphicsEndImageContext()
        self.scrollView.addDottedBorder()
     }
 
     @IBAction func btnSimple(_ sender: Any) {
+        UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
+        let offSet = scrollView.contentOffset
+        UIGraphicsGetCurrentContext()?.translateBy(x: -offSet.x, y: -offSet.y)
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
         UIGraphicsBeginImageContext(scrollView.bounds.size)
         UIGraphicsEndImageContext()
         self.scrollView.layer.borderWidth = 5
@@ -141,7 +154,11 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
         self.scrollView.layer.masksToBounds = true
     }
     @IBAction func btnSave(_ sender: UIButton) {
+       
         UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
+        subView.frame = subRect
+        subView.addSubview(vwSubView)
+        imageView.addSubview(subView)
         let offSet = scrollView.contentOffset
         UIGraphicsGetCurrentContext()?.translateBy(x: -offSet.x, y: -offSet.y)
         scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)

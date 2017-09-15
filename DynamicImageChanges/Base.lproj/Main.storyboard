@@ -30,7 +30,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-eu-795">
-                                <rect key="frame" x="16" y="41" width="124" height="57"/>
+                                <rect key="frame" x="32" y="41" width="124" height="57"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label" translatesAutoresizingMaskIntoConstraints="NO" id="MOf-hR-M8A">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="57"/>
@@ -124,7 +124,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SDF-hx-k0k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2pd-wf-3pm"/>
+                            <constraint firstItem="SDF-hx-k0k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="2pd-wf-3pm"/>
                             <constraint firstItem="3Uw-dK-thM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5bf-4u-Ji9"/>
                             <constraint firstItem="Nvr-CW-UCD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5vF-gd-3Fm"/>
                             <constraint firstItem="Nvr-CW-UCD" firstAttribute="top" secondItem="VH9-6W-8LJ" secondAttribute="bottom" constant="8" id="73o-UT-8Ci"/>
@@ -135,9 +135,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Uw-dK-thM" secondAttribute="bottom" constant="20" id="G45-jk-XsZ"/>
                             <constraint firstItem="VH9-6W-8LJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QQe-yu-ZYz"/>
                             <constraint firstItem="3Uw-dK-thM" firstAttribute="top" secondItem="SDF-hx-k0k" secondAttribute="bottom" constant="8" id="VIX-v3-A3i"/>
-                            <constraint firstItem="k7O-eu-795" firstAttribute="leading" secondItem="SDF-hx-k0k" secondAttribute="leading" id="bTG-Pf-1r7"/>
+                            <constraint firstItem="k7O-eu-795" firstAttribute="leading" secondItem="SDF-hx-k0k" secondAttribute="leading" constant="16" id="bTG-Pf-1r7"/>
                             <constraint firstItem="3Uw-dK-thM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ctK-BO-Ozn"/>
-                            <constraint firstItem="SDF-hx-k0k" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g4N-1i-jgT"/>
+                            <constraint firstItem="SDF-hx-k0k" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-16" id="g4N-1i-jgT"/>
                             <constraint firstItem="SDF-hx-k0k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="h5M-i5-aVg"/>
                             <constraint firstItem="Nvr-CW-UCD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oWe-94-mk5"/>
                             <constraint firstItem="SDF-hx-k0k" firstAttribute="top" secondItem="k7O-eu-795" secondAttribute="bottom" constant="-70" id="uQc-HO-aeG"/>

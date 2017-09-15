@@ -48,7 +48,7 @@ extension UIView {
         let color = UIColor.red.cgColor
         let shapeLayer:CAShapeLayer = CAShapeLayer()
         let frameSize = self.frame.size
-        let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
+        let shapeRect = CGRect(x: 5, y: 5, width: frameSize.width - 5, height: frameSize.height - 5)
         shapeLayer.bounds = shapeRect
         shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
         shapeLayer.fillColor = UIColor.clear.cgColor
@@ -57,6 +57,10 @@ extension UIView {
         shapeLayer.lineJoin = kCALineJoinRound
         shapeLayer.lineDashPattern = [6,3]
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 5).cgPath
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, UIScreen.main.scale)
+        guard let context = UIGraphicsGetCurrentContext() else { return}
+        self.layer.render(in: context)
+        UIGraphicsEndImageContext()
         self.layer.addSublayer(shapeLayer)
     }
     
@@ -64,7 +68,7 @@ extension UIView {
         let color = UIColor.red.cgColor
         let shapeLayer:CAShapeLayer = CAShapeLayer()
         let frameSize = self.frame.size
-        let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
+        let shapeRect = CGRect(x: 5, y: 5, width: frameSize.width - 5, height: frameSize.height - 5)
         shapeLayer.bounds = shapeRect
         shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
         shapeLayer.fillColor = UIColor.clear.cgColor
