@@ -28,6 +28,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-6W-8LJ">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3b-jT-5O5">
+                                        <rect key="frame" x="104" y="110" width="43" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-eu-795">
                                         <rect key="frame" x="8" y="8" width="124" height="57"/>
                                         <subviews>
@@ -57,17 +63,32 @@
                                             <constraint firstItem="UdQ-Qf-feo" firstAttribute="centerX" secondItem="MOf-hR-M8A" secondAttribute="centerX" constant="15" id="uR5-eV-WWV"/>
                                         </constraints>
                                     </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Kg-Vr-A1Q">
+                                        <rect key="frame" x="8" y="116.5" width="234" height="17"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="jMj-Hp-DsO"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="VH9-6W-8LJ" secondAttribute="bottom" id="7gk-qD-hX7"/>
                                     <constraint firstItem="k7O-eu-795" firstAttribute="top" secondItem="bYi-TJ-KTZ" secondAttribute="top" constant="8" id="9IQ-dH-v1L"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Kg-Vr-A1Q" secondAttribute="trailing" constant="8" id="S99-Me-xpJ"/>
                                     <constraint firstAttribute="trailing" secondItem="VH9-6W-8LJ" secondAttribute="trailing" id="SDZ-vN-pko"/>
+                                    <constraint firstItem="w3b-jT-5O5" firstAttribute="centerX" secondItem="bYi-TJ-KTZ" secondAttribute="centerX" id="SJ7-cL-OKF"/>
+                                    <constraint firstItem="w3b-jT-5O5" firstAttribute="centerY" secondItem="bYi-TJ-KTZ" secondAttribute="centerY" id="Wbf-MS-Az6"/>
                                     <constraint firstItem="VH9-6W-8LJ" firstAttribute="leading" secondItem="bYi-TJ-KTZ" secondAttribute="leading" id="X8v-HQ-dXx"/>
+                                    <constraint firstItem="2Kg-Vr-A1Q" firstAttribute="centerX" secondItem="bYi-TJ-KTZ" secondAttribute="centerX" id="cd1-hL-7AL"/>
+                                    <constraint firstItem="2Kg-Vr-A1Q" firstAttribute="centerY" secondItem="bYi-TJ-KTZ" secondAttribute="centerY" id="dWn-QQ-euM"/>
                                     <constraint firstAttribute="width" constant="250" id="m1N-ew-vWF"/>
                                     <constraint firstAttribute="height" constant="250" id="mHp-0K-653"/>
                                     <constraint firstItem="k7O-eu-795" firstAttribute="leading" secondItem="bYi-TJ-KTZ" secondAttribute="leading" constant="8" id="nwh-uF-hcS"/>
                                     <constraint firstItem="VH9-6W-8LJ" firstAttribute="top" secondItem="bYi-TJ-KTZ" secondAttribute="top" id="rqp-Mt-qK3"/>
+                                    <constraint firstItem="2Kg-Vr-A1Q" firstAttribute="leading" secondItem="bYi-TJ-KTZ" secondAttribute="leading" constant="8" id="zWc-zV-3IT"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvr-CW-UCD">
@@ -109,9 +130,9 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-bn-FYk">
                                                 <rect key="frame" x="144" y="0.0" width="48" height="50"/>
-                                                <state key="normal" title="Save"/>
+                                                <state key="normal" title="Text"/>
                                                 <connections>
-                                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P2S-tD-4Zi"/>
+                                                    <action selector="btnText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNS-i5-NE3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33y-pO-wJ1">
@@ -120,7 +141,10 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyn-XJ-KBl">
                                                 <rect key="frame" x="240" y="0.0" width="48" height="50"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="056-jY-RoG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -154,13 +178,15 @@
                         <outlet property="ivImageView" destination="VH9-6W-8LJ" id="bdm-YT-0qR"/>
                         <outlet property="ivSubImageView" destination="MOf-hR-M8A" id="vz4-dt-8Fl"/>
                         <outlet property="lblSubView" destination="UdQ-Qf-feo" id="316-Od-sb7"/>
+                        <outlet property="lblText" destination="w3b-jT-5O5" id="qGA-AK-eRe"/>
                         <outlet property="subView" destination="bYi-TJ-KTZ" id="jnY-t9-kFb"/>
+                        <outlet property="textFields" destination="2Kg-Vr-A1Q" id="t8d-my-6CN"/>
                         <outlet property="vwSubView" destination="k7O-eu-795" id="1Rp-Cu-Z7N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.2" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1053.75" y="122.5"/>
         </scene>
         <!--Image Crop View Controller-->
         <scene sceneID="bWY-sw-Jq8">

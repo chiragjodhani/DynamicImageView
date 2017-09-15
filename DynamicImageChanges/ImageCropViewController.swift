@@ -18,7 +18,6 @@ class ImageCropViewController: UIViewController,UINavigationControllerDelegate, 
         navigationItem.title = "Image Crop & Save"
         scrollView.delegate = self
         imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
-        imageView.image = UIImage(named: "photoeditorsdk-export.png")
         imageView.isUserInteractionEnabled = true
         scrollView.addSubview(imageView)
         

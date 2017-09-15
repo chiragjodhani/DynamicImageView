@@ -7,8 +7,11 @@
 //
 
 import UIKit
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    
+    @IBOutlet weak var textFields: UITextField!
+    @IBOutlet weak var lblText: UILabel!
     @IBOutlet weak var subView: UIView!
     @IBOutlet weak var ivImageView: UIImageView!
     @IBOutlet weak var vwSubView: UIView!
@@ -20,8 +23,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnSelectImage: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+       // textFields.delegate = self
+        textFields.isHidden = true
         navigationItem.title = "Custom Image Editor"
         self.vwSubView.isHidden = true
+        self.lblText.isHidden = true
         self.BottomView.isHidden = true
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(ViewController.draggedView(_:)))
         self.vwSubView.isUserInteractionEnabled = true
@@ -70,6 +76,32 @@ class ViewController: UIViewController {
         self.ivImageView.layer.borderColor = UIColor(white: 1.0, alpha: 0.5).cgColor
         self.ivImageView.layer.masksToBounds = true
     }
+    
+    
+    @IBAction func btnText(_ sender: Any) {
+         self.lblText.isHidden = false
+        lblText.isUserInteractionEnabled = true
+        let aSelector : Selector = #selector(ViewController.lblTapped)
+        let tapGesture = UITapGestureRecognizer(target: self, action: aSelector)
+        tapGesture.numberOfTapsRequired = 1
+        lblText.addGestureRecognizer(tapGesture)
+    }
+    
+    func lblTapped(){
+        lblText.isHidden = true
+        textFields.isHidden = false
+        textFields.text = lblText.text
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        textFields.isHidden = true
+        lblText.isHidden = false
+        lblText.text = textFields.text
+        return true
+    }
     @IBAction func btnSave(_ sender: UIButton) {
 //        UIGraphicsBeginImageContextWithOptions(ivImageView.bounds.size, true, UIScreen.main.scale)
 //        ivImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -83,5 +115,8 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    
 }
+
 

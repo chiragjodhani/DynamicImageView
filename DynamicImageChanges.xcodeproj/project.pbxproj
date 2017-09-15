@@ -17,7 +17,6 @@
 		C233A6031F67BA3F003C2D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C233A6011F67BA3F003C2D83 /* LaunchScreen.storyboard */; };
 		C233A60E1F67BA3F003C2D83 /* DynamicImageChangesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C233A60D1F67BA3F003C2D83 /* DynamicImageChangesTests.swift */; };
 		C233A6191F67BA40003C2D83 /* DynamicImageChangesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C233A6181F67BA40003C2D83 /* DynamicImageChangesUITests.swift */; };
-		C233A6271F67BEF4003C2D83 /* photoeditorsdk-export.png in Resources */ = {isa = PBXBuildFile; fileRef = C233A6261F67BEF4003C2D83 /* photoeditorsdk-export.png */; };
 		C23638F61F6A572100C2F288 /* ImageCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23638F51F6A572100C2F288 /* ImageCropViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		C233A6141F67BA3F003C2D83 /* DynamicImageChangesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicImageChangesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C233A6181F67BA40003C2D83 /* DynamicImageChangesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicImageChangesUITests.swift; sourceTree = "<group>"; };
 		C233A61A1F67BA40003C2D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C233A6261F67BEF4003C2D83 /* photoeditorsdk-export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoeditorsdk-export.png"; sourceTree = "<group>"; };
 		C23638F51F6A572100C2F288 /* ImageCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropViewController.swift; sourceTree = "<group>"; };
 		CC87C2EB0895AA19458C7353 /* Pods_DynamicImageChangesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicImageChangesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,7 +119,6 @@
 				C233A5F81F67BA3F003C2D83 /* AppDelegate.swift */,
 				C233A5FA1F67BA3F003C2D83 /* ViewController.swift */,
 				C23638F51F6A572100C2F288 /* ImageCropViewController.swift */,
-				C233A6261F67BEF4003C2D83 /* photoeditorsdk-export.png */,
 				C233A5FC1F67BA3F003C2D83 /* Main.storyboard */,
 				C233A5FF1F67BA3F003C2D83 /* Assets.xcassets */,
 				C233A6011F67BA3F003C2D83 /* LaunchScreen.storyboard */,
@@ -292,7 +289,6 @@
 			files = (
 				C233A6031F67BA3F003C2D83 /* LaunchScreen.storyboard in Resources */,
 				C233A6001F67BA3F003C2D83 /* Assets.xcassets in Resources */,
-				C233A6271F67BEF4003C2D83 /* photoeditorsdk-export.png in Resources */,
 				C233A5FE1F67BA3F003C2D83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
