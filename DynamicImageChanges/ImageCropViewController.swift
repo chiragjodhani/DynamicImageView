@@ -12,8 +12,10 @@ class ImageCropViewController: UIViewController,UINavigationControllerDelegate, 
 
     @IBOutlet weak var scrollView: UIScrollView!
     var imageView = UIImageView()
+    var delegate: ViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Image Crop & Save"
         scrollView.delegate = self
         imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
         imageView.image = UIImage(named: "photoeditorsdk-export.png")
@@ -77,7 +79,7 @@ class ImageCropViewController: UIViewController,UINavigationControllerDelegate, 
     }
 
     @IBAction func btnCropSave(_ sender: UIButton) {
-        UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
+        /*UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
         let offSet = scrollView.contentOffset
         UIGraphicsGetCurrentContext()?.translateBy(x: -offSet.x, y: -offSet.y)
         scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -87,7 +89,20 @@ class ImageCropViewController: UIViewController,UINavigationControllerDelegate, 
         UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
         let alert = UIAlertController(title:"Image Saved", message: "Your Image has been saved to your camera roll", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)*/
+        
+        UIGraphicsBeginImageContextWithOptions(scrollView.bounds.size, true, UIScreen.main.scale)
+        let offSet = scrollView.contentOffset
+        UIGraphicsGetCurrentContext()?.translateBy(x: -offSet.x, y: -offSet.y)
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        UIGraphicsBeginImageContext(scrollView.bounds.size)
+        UIGraphicsEndImageContext()
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        delegate.ivImageView.image = image
+        delegate.BottomView.isHidden = false
+        delegate.vwSubView.isHidden = false
+        delegate.btnSelectImage.isHidden = true
+        navigationController?.popViewController(animated: true)
     }
 }
 
