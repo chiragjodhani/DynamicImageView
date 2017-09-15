@@ -10,6 +10,12 @@
 		4E2E491CE2E2DB0695785A7F /* Pods_DynamicImageChangesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC87C2EB0895AA19458C7353 /* Pods_DynamicImageChangesTests.framework */; };
 		8622D8EF92E87002892ADCBB /* Pods_DynamicImageChanges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A820745B6837996C42964D /* Pods_DynamicImageChanges.framework */; };
 		B1610A2F24A40AAB73122A60 /* Pods_DynamicImageChangesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D4220020AA1FC7DF739A6 /* Pods_DynamicImageChangesUITests.framework */; };
+		C23387F91F6BDD510076104D /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C23387F81F6BDD510076104D /* download.jpeg */; };
+		C23387FB1F6BE0F80076104D /* SetTextFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23387FA1F6BE0F80076104D /* SetTextFontViewController.swift */; };
+		C23387FE1F6BE1B00076104D /* SelectionTextAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23387FC1F6BE1B00076104D /* SelectionTextAttribute.swift */; };
+		C23387FF1F6BE1B00076104D /* SelectionTextAttribute.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23387FD1F6BE1B00076104D /* SelectionTextAttribute.xib */; };
+		C23388021F6BE3AE0076104D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23388001F6BE3AE0076104D /* CustomCell.swift */; };
+		C23388031F6BE3AE0076104D /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23388011F6BE3AE0076104D /* CustomCell.xib */; };
 		C233A5F91F67BA3F003C2D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C233A5F81F67BA3F003C2D83 /* AppDelegate.swift */; };
 		C233A5FB1F67BA3F003C2D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C233A5FA1F67BA3F003C2D83 /* ViewController.swift */; };
 		C233A5FE1F67BA3F003C2D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C233A5FC1F67BA3F003C2D83 /* Main.storyboard */; };
@@ -46,6 +52,12 @@
 		63A820745B6837996C42964D /* Pods_DynamicImageChanges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicImageChanges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F707E841673CBF9EBB3916 /* Pods-DynamicImageChanges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicImageChanges.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicImageChanges/Pods-DynamicImageChanges.debug.xcconfig"; sourceTree = "<group>"; };
 		86D04EB28FC86B89CA284A17 /* Pods-DynamicImageChangesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicImageChangesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicImageChangesUITests/Pods-DynamicImageChangesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C23387F81F6BDD510076104D /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		C23387FA1F6BE0F80076104D /* SetTextFontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTextFontViewController.swift; sourceTree = "<group>"; };
+		C23387FC1F6BE1B00076104D /* SelectionTextAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionTextAttribute.swift; sourceTree = "<group>"; };
+		C23387FD1F6BE1B00076104D /* SelectionTextAttribute.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionTextAttribute.xib; sourceTree = "<group>"; };
+		C23388001F6BE3AE0076104D /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C23388011F6BE3AE0076104D /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		C233A5F51F67BA3F003C2D83 /* DynamicImageChanges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicImageChanges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C233A5F81F67BA3F003C2D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C233A5FA1F67BA3F003C2D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,11 +130,17 @@
 			children = (
 				C233A5F81F67BA3F003C2D83 /* AppDelegate.swift */,
 				C233A5FA1F67BA3F003C2D83 /* ViewController.swift */,
+				C23387F81F6BDD510076104D /* download.jpeg */,
 				C23638F51F6A572100C2F288 /* ImageCropViewController.swift */,
+				C23387FA1F6BE0F80076104D /* SetTextFontViewController.swift */,
+				C23387FC1F6BE1B00076104D /* SelectionTextAttribute.swift */,
+				C23388001F6BE3AE0076104D /* CustomCell.swift */,
+				C23388011F6BE3AE0076104D /* CustomCell.xib */,
 				C233A5FC1F67BA3F003C2D83 /* Main.storyboard */,
 				C233A5FF1F67BA3F003C2D83 /* Assets.xcassets */,
 				C233A6011F67BA3F003C2D83 /* LaunchScreen.storyboard */,
 				C233A6041F67BA3F003C2D83 /* Info.plist */,
+				C23387FD1F6BE1B00076104D /* SelectionTextAttribute.xib */,
 			);
 			path = DynamicImageChanges;
 			sourceTree = "<group>";
@@ -287,7 +305,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23388031F6BE3AE0076104D /* CustomCell.xib in Resources */,
 				C233A6031F67BA3F003C2D83 /* LaunchScreen.storyboard in Resources */,
+				C23387F91F6BDD510076104D /* download.jpeg in Resources */,
+				C23387FF1F6BE1B00076104D /* SelectionTextAttribute.xib in Resources */,
 				C233A6001F67BA3F003C2D83 /* Assets.xcassets in Resources */,
 				C233A5FE1F67BA3F003C2D83 /* Main.storyboard in Resources */,
 			);
@@ -453,8 +474,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C23638F61F6A572100C2F288 /* ImageCropViewController.swift in Sources */,
+				C23387FB1F6BE0F80076104D /* SetTextFontViewController.swift in Sources */,
 				C233A5FB1F67BA3F003C2D83 /* ViewController.swift in Sources */,
 				C233A5F91F67BA3F003C2D83 /* AppDelegate.swift in Sources */,
+				C23388021F6BE3AE0076104D /* CustomCell.swift in Sources */,
+				C23387FE1F6BE1B00076104D /* SelectionTextAttribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

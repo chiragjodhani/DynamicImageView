@@ -8,6 +8,8 @@ target 'DynamicImageChanges' do
   # Pods for DynamicImageChanges
   pod "MMSProfileImagePicker"
   pod 'PhotoEditorSDK', '~> 7.2'
+  pod 'LSDialogViewController'
+  pod 'PhotoTweaks'
   target 'DynamicImageChangesTests' do
     inherit! :search_paths
     # Pods for testing

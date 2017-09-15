@@ -7,17 +7,19 @@
 //
 
 import UIKit
-
-class ImageCropViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,UIScrollViewDelegate {
+import PhotoTweaks
+class ImageCropViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,UIScrollViewDelegate,PhotoTweaksViewControllerDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     var imageView = UIImageView()
+    var image: UIImage!
     var delegate: ViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Image Crop & Save"
         scrollView.delegate = self
         imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
+        imageView.image = UIImage(named: "download.jpeg")
         imageView.isUserInteractionEnabled = true
         scrollView.addSubview(imageView)
         
@@ -35,19 +37,43 @@ class ImageCropViewController: UIViewController,UINavigationControllerDelegate, 
    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        imageView.image = pickedImage
-        imageView.contentMode = UIViewContentMode.center
-        imageView.frame = CGRect(x: 0, y: 0, width: pickedImage.size.width, height: pickedImage.size.height)
-        scrollView.contentSize = pickedImage.size
-        let scrollviewFrame = scrollView.frame
-        let scaleWidth = scrollviewFrame.size.width / scrollView.contentSize.width
-        let scaleHeight = scrollviewFrame.size.height / scrollView.contentSize.height
-        let minScale = min(scaleHeight,scaleWidth)
-        scrollView.minimumZoomScale = minScale
-        scrollView.maximumZoomScale = 1
-        scrollView.zoomScale = minScale
-        centerScrollViewContents()
-        picker.dismiss(animated: true, completion: nil)
+//        imageView.image = pickedImage
+//        imageView.contentMode = UIViewContentMode.center
+//        imageView.frame = CGRect(x: 0, y: 0, width: pickedImage.size.width, height: pickedImage.size.height)
+//        scrollView.contentSize = pickedImage.size
+//        let scrollviewFrame = scrollView.frame
+//        let scaleWidth = scrollviewFrame.size.width / scrollView.contentSize.width
+//        let scaleHeight = scrollviewFrame.size.height / scrollView.contentSize.height
+//        let minScale = min(scaleHeight,scaleWidth)
+//        scrollView.minimumZoomScale = minScale
+//        scrollView.maximumZoomScale = 1
+//        scrollView.zoomScale = minScale
+//        //rotatedimage()
+//        centerScrollViewContents()
+        
+        let photoCrop = PhotoTweaksViewController(image: pickedImage)
+        photoCrop?.delegate = self
+        photoCrop?.autoSaveToLibray = false
+        photoCrop?.maxRotationAngle = .pi / 4
+        picker.pushViewController(photoCrop!, animated: true)
+    }
+    func photoTweaksController(_ controller: PhotoTweaksViewController!, didFinishWithCroppedImage croppedImage: UIImage!) {
+        self.imageView.image = croppedImage
+        UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, true, UIScreen.main.scale)
+        imageView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        UIGraphicsBeginImageContext(imageView.bounds.size)
+        UIGraphicsEndImageContext()
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        delegate.ivImageView.image = image
+        delegate.BottomView.isHidden = false
+        delegate.vwSubView.isHidden = false
+        delegate.btnSelectImage.isHidden = true
+        navigationController?.popViewController(animated: true)
+        controller.dismiss(animated: true, completion: nil)
+       // controller.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    func photoTweaksControllerDidCancel(_ controller: PhotoTweaksViewController!) {
+        controller.dismiss(animated: true, completion: nil)
     }
     func centerScrollViewContents(){
         let boundsSize = scrollView.bounds.size

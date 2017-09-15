@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D3A6B5593B64857C8764D8304BFFE12F'
+               BlueprintIdentifier = 'D0DEFE3AB6C055DCFBE85A52E2257994'
                BlueprintName = 'Pods-DynamicImageChanges'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-DynamicImageChanges.framework'>

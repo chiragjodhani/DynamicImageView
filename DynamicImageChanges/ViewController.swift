@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PhotoTweaks
 class ViewController: UIViewController, UITextFieldDelegate {
 
     
@@ -79,18 +80,49 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func btnText(_ sender: Any) {
-         self.lblText.isHidden = false
+        let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SetTextFontViewController") as! SetTextFontViewController
+        secondVC.delegate = self
+        self.navigationController?.pushViewController(secondVC, animated: true)
+    }
+    func textEdit(){
+        self.lblText.isHidden = false
         lblText.isUserInteractionEnabled = true
         let aSelector : Selector = #selector(ViewController.lblTapped)
         let tapGesture = UITapGestureRecognizer(target: self, action: aSelector)
         tapGesture.numberOfTapsRequired = 1
         lblText.addGestureRecognizer(tapGesture)
+        panGesture = UIPanGestureRecognizer(target: self, action: #selector(ViewController.draggedText(_:)))
+        self.lblText.addGestureRecognizer(panGesture)
     }
-    
     func lblTapped(){
         lblText.isHidden = true
         textFields.isHidden = false
         textFields.text = lblText.text
+    }
+    func draggedText(_ sender:UIPanGestureRecognizer){
+        if sender.state == .began || sender.state == .changed || sender.state == .ended {
+            var rec: CGRect = (sender.view?.frame)!
+            let imgvw = self.ivImageView.frame
+            if ((rec.origin.x >= imgvw.origin.x && rec.origin.y >= imgvw.origin.y && (rec.origin.x + rec.size.width <= imgvw.origin.x + imgvw.size.width) && (rec.origin.y + rec.size.height <= imgvw.origin.y + imgvw.size.height))){
+                let translation = sender.translation(in: self.ivImageView)
+                lblText.center = CGPoint(x: (sender.view?.center.x)! + translation.x, y: (sender.view?.center.y)! + translation.y)
+                rec = (sender.view?.frame)!
+                if (rec.origin.x < imgvw.origin.x){
+                    rec.origin.x = imgvw.origin.x
+                }
+                if (rec.origin.y < imgvw.origin.y){
+                    rec.origin.y = imgvw.origin.y
+                }
+                if (rec.origin.x + rec.size.width > imgvw.origin.x + imgvw.size.width) {
+                    rec.origin.x = imgvw.origin.x + imgvw.size.width - rec.size.width
+                }
+                if (rec.origin.y + rec.size.height > imgvw.origin.y + imgvw.size.height) {
+                    rec.origin.y = imgvw.origin.y + imgvw.size.height - rec.size.height
+                }
+                sender.view?.frame = rec
+                sender.setTranslation(CGPoint.zero, in: self.ivImageView)
+            }
+        }
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true

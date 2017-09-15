@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LSDialogViewController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>MMSCameraViewController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>PhotoTweaks.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>Pods-DynamicImageChanges.xcscheme</key>
 		<dict>
@@ -42,7 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AFFCE65ABDBBB8B79E157FBF525F73B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B071413984EE593EEF675A09C0842DC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0DEFE3AB6C055DCFBE85A52E2257994</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D69CAEAB092EB3F005A0B1AF4B0001A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E2E8557A7C72848196AD212C53A569DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8ACBA4489C1C796E9E66B73E77B6EA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

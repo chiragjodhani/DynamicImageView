@@ -89,14 +89,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/LSDialogViewController/LSDialogViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMSCameraViewController/MMSCameraViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMSProfileImagePicker/MMSProfileImagePicker.framework"
   install_framework "${PODS_ROOT}/PhotoEditorSDK/pesdk-ios-build-7.2.0/PhotoEditorSDK.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PhotoTweaks/PhotoTweaks.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/LSDialogViewController/LSDialogViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMSCameraViewController/MMSCameraViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMSProfileImagePicker/MMSProfileImagePicker.framework"
   install_framework "${PODS_ROOT}/PhotoEditorSDK/pesdk-ios-build-7.2.0/PhotoEditorSDK.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PhotoTweaks/PhotoTweaks.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

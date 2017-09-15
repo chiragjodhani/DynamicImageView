@@ -1,18 +1,24 @@
 PODS:
+  - LSDialogViewController (0.2.0)
   - MMSCameraViewController (1.0.3)
   - MMSProfileImagePicker (1.4.1):
     - MMSCameraViewController (~> 1.0.3)
   - PhotoEditorSDK (7.2.0)
+  - PhotoTweaks (1.0.3)
 
 DEPENDENCIES:
+  - LSDialogViewController
   - MMSProfileImagePicker
   - PhotoEditorSDK (~> 7.2)
+  - PhotoTweaks
 
 SPEC CHECKSUMS:
+  LSDialogViewController: 9f359844c86cd014889f05dfcc76a7799c60c2d8
   MMSCameraViewController: c32450a83d5ad18d38a1d85c68bf899362a93667
   MMSProfileImagePicker: fa3aee5746945f7bee2cb422bf51dd4478b94e39
   PhotoEditorSDK: 12557cb3391f5f2ac7c268f18bb2a206254d83c9
+  PhotoTweaks: 17a448f451872fd9c3cc65ec5ca125ccd1b48d11
 
-PODFILE CHECKSUM: 462fc3f22f889df32a6cf88308e8fb4eeb893d1a
+PODFILE CHECKSUM: d6a141013f2859feed0448fdef233ccf2b5701c2
 
 COCOAPODS: 1.2.0
