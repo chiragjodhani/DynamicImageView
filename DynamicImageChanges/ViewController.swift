@@ -8,7 +8,7 @@
 
 import UIKit
 import PhotoTweaks
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate,PhotoTweaksViewControllerDelegate {
 
     
     @IBOutlet weak var textFields: UITextField!
@@ -24,7 +24,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnSelectImage: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-       // textFields.delegate = self
         textFields.isHidden = true
         navigationItem.title = "Custom Image Editor"
         self.vwSubView.isHidden = true
@@ -35,10 +34,40 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.vwSubView.addGestureRecognizer(panGesture)
     }
     @IBAction func btnSelectImage(_ sender: Any) {
-        let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "ImageCropViewController") as! ImageCropViewController
-        secondVC.delegate = self
-        self.navigationController?.pushViewController(secondVC, animated: true)
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        self.present(imagePicker, animated: true, completion: nil)
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let photoCrop = PhotoTweaksViewController(image: pickedImage)
+        photoCrop?.delegate = self
+        photoCrop?.autoSaveToLibray = false
+        photoCrop?.maxRotationAngle = .pi / 4
+        picker.pushViewController(photoCrop!, animated: true)
+    }
+    func photoTweaksController(_ controller: PhotoTweaksViewController!, didFinishWithCroppedImage croppedImage: UIImage!) {
+        self.ivImageView.image = croppedImage
+        UIGraphicsBeginImageContextWithOptions(ivImageView.bounds.size, true, UIScreen.main.scale)
+        ivImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        UIGraphicsBeginImageContext(ivImageView.bounds.size)
+        UIGraphicsEndImageContext()
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        self.ivImageView.image = image
+        self.BottomView.isHidden = false
+        self.vwSubView.isHidden = false
+        self.btnSelectImage.isHidden = true
+        controller.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    func photoTweaksControllerDidCancel(_ controller: PhotoTweaksViewController!) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func draggedView(_ sender:UIPanGestureRecognizer){
         if sender.state == .began || sender.state == .changed || sender.state == .ended {
             var rec: CGRect = (sender.view?.frame)!
@@ -135,12 +164,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     @IBAction func btnSave(_ sender: UIButton) {
-//        UIGraphicsBeginImageContextWithOptions(ivImageView.bounds.size, true, UIScreen.main.scale)
-//        ivImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
-//        UIGraphicsBeginImageContext(ivImageView.bounds.size)
-//        UIGraphicsEndImageContext()
-//        let image = UIGraphicsGetImageFromCurrentImageContext()
-        
         let image =  UIImage.init(view: subView)
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         let alert = UIAlertController(title:"Image Saved", message: "Your Image has been saved to your camera roll", preferredStyle: UIAlertControllerStyle.alert)
